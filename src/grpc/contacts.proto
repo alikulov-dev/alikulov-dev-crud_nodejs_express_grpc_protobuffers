@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service ContactService{
+    rpc GetAll (Empty) returns (ContactList) {};
+    rpc Get (ContactRequestId) returns (Contact) {};
+    rpc Insert (Contact) returns (Contact) {};
+    rpc Update (Contact) returns (Contact) {};
+    rpc Remove (ContactRequestId) returns (Empty) {};
+}
+
+message Empty {}
+
+message ContactRequestId {
+    string id=1;
+}
+
+message Contact {
+    string name=1;
+    string contact=2;
+}
+
+message ContactList {
+    repeated Contact Contacts=1;
+}

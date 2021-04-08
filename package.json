@@ -1,0 +1,32 @@
+{
+  "name": "express-grpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/index.js",
+    "server": "babel-node src/grpc/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@grpc/grpc-js": "^1.2.0",
+    "@grpc/proto-loader": "^0.5.4",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "grpc": "^1.24.2",
+    "mongoose": "^5.9.9",
+    "morgan": "^1.10.0",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
